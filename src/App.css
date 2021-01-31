@@ -1,6 +1,49 @@
 .App {
+  min-height: 100vh;
   text-align: center;
+  background-color: #282c34;
+  color: white;
 }
+
+
+.Container{
+  padding: 100px;
+}
+
+.Shelf{
+  flex: 1;
+  display: grid;
+  border: white solid 2px;
+  grid-template-columns: repeat(8, minmax(100px, 1fr));
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.Label{
+  border: solid 1px white;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  width:auto;
+  color: white;
+}
+
+.LabelImage{
+  max-width:100%;
+  height:auto;
+}
+
+.Unknown{
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+
+.UnknownCell{
+  max-width: 200px;
+  margin-right: 20px;
+}
+
+/*Not needed*/
 
 .App-logo {
   height: 40vmin;
